@@ -1,0 +1,25 @@
+{
+  "name": "react-browserify-gulp",
+  "version": "0.0.1",
+  "description": "a scaffolding tool for developing web apps with React.js, Browserify and Gulp",
+  "author": "Kiyoshi Hara",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.0.0-rc10",
+    "browserify": "^8.1.3",
+    "del": "^1.1.1",
+    "gulp": "^3.8.10",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-changed": "^1.1.1",
+    "gulp-minify-css": "^0.4.5",
+    "gulp-plumber": "^0.6.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-ruby-sass-ns": "^0.1.0",
+    "gulp-uglify": "^1.1.0",
+    "react": "^0.12.2",
+    "reactify": "^1.0.0",
+    "run-sequence": "^1.0.2",
+    "underscore": "^1.7.0",
+    "vinyl-source-stream": "^1.0.0"
+  }
+}
