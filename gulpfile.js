@@ -53,6 +53,7 @@ gulp.task('js-compile', function(){
 	gulp.src(['./dist/**/*.js'])
 	.pipe(plumber())
 	.pipe(uglify())
+	.pipe(rename({suffix: '.min'}))
 	.pipe(gulp.dest('./www/'))
 	.pipe(reload({stream:true}));
 });
