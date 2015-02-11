@@ -43,7 +43,6 @@ gulp.task('sass', function() {
 /* ---- js tasks ---- */   
 gulp.task('react-compile', function(){
 	return browserify(['./src/js/main.js'])
-	.pipe(plumber())
 	.transform(reactify)
 	.bundle()
 	.pipe(source('app.js'))
@@ -78,5 +77,5 @@ gulp.task('default', ['server'], function(){
 		.pipe(reload({stream:true}));
 	});
 	gulp.watch(['./src/scss/**/*.scss'], ['sass']);
-	gulp.watch(['./src/js/**/*.js'], ['js']);
+	gulp.watch(['./src/js/**/*.js', './src/js/**/*.jsx'], ['js']);
 });
